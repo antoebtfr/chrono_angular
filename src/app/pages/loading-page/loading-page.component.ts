@@ -1,4 +1,4 @@
-import { AnimationService } from './../../shared/animation.service';
+import { AnimationService } from '../../shared/service/animation.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
