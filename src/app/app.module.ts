@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoadingPageComponent } from './pages/loading-page/loading-page.component';
+import { ModeSelectComponent } from './components/mode-select/mode-select.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoadingPageComponent,
+    ModeSelectComponent
   ],
   imports: [
     BrowserModule,

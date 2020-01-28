@@ -1,0 +1,44 @@
+#body {
+  height: 100vh;
+  background-image: url("https://ak6.picdn.net/shutterstock/videos/1022870776/thumb/10.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  color: white;
+  font-size: 4em;
+  animation-name: bump, moveOut;
+  animation-duration: 3s, 2s;
+  animation-delay: 0.5s, 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 5;
+}
+
+app-mode-select {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* keyframes */
+
+@keyframes bump {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes moveOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
