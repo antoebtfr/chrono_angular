@@ -1,0 +1,36 @@
+#body{
+    background: linear-gradient(rgb(4, 69, 143), rgb(16, 33, 109));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+#start-btn{
+    background-color: transparent;
+    border-radius: 50%;
+    color: white;
+    height: 110px;
+    width: 110px;
+    font-size: 0.8em;
+    border: solid white 3px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: fixed;
+    bottom: 30vh;
+    transform-origin: center;
+}
+
+#start-btn:hover{
+    width: 130px;
+    height: 130px;
+    font-size: 0.9em;
+    bottom: 28vh;
+}
+
+#chrono-screen{
+    font-size: 4em;
+    position: fixed;
+    bottom: 50vh;
+}

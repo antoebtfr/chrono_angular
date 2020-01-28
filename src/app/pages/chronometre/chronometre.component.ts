@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChronometreComponent implements OnInit {
 
+  public second: number;
+  public minute: number;
+  public hour: number;
+
+  public chronometre: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.chronometre = '00 : 00 : 00';
   }
 
 }

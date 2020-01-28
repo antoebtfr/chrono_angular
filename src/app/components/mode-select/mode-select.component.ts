@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ModeSelectComponent implements OnInit {
 
   public modes: Application[] = [
-    { name: 'Chronomètre', background: '' },
+    { name: 'Chronomètre', background: '', link: 'chrono' },
     { name: 'Minuteur', background: '' }
   ];
 
