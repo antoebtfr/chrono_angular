@@ -1,3 +1,4 @@
+import { Application } from './../../shared/application';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mode-select.component.css']
 })
 export class ModeSelectComponent implements OnInit {
-  public modes = ['Chronomètre', 'Minuteur'];
+
+  public modes: Application[] = [
+    { name: 'Chronomètre', background: '' },
+    { name: 'Minuteur', background: '' }
+  ];
 
   constructor() { }
 

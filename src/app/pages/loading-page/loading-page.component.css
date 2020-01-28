@@ -40,5 +40,6 @@ app-mode-select {
   }
   to {
     opacity: 0;
+    display: none;
   }
 }

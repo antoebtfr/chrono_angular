@@ -1,28 +1,41 @@
-#body{
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    filter: blur(4px);
-    animation-name: deBlur;
-    animation-delay: var(--delay-name-animation);
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+#body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  filter: blur(4px);
+  animation-name: deBlur;
+  animation-delay: var(--delay-name-animation);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-.mode{
-    display: flex;
-    flex-basis: 50%;
-    align-items: center;
-    justify-content: center;
+.mode {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 1s;
+  border: 0 black; 
+}
+
+.mode:hover {
+  flex-basis: 100%;
+  font-size: 2em;
+  border: 5px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.mode p {
     cursor: pointer;
-    font-size: 1.2em;
 }
-
 
 /* keyframes */
 
 @keyframes deBlur {
-    100%{
-        filter: blur(0px);
-    }
+  100% {
+    filter: blur(0px);
+  }
 }

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoadingPageComponent } from './pages/loading-page/loading-page.component';
 import { ModeSelectComponent } from './components/mode-select/mode-select.component';
+import { ChronometreComponent } from './pages/chronometre/chronometre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoadingPageComponent,
-    ModeSelectComponent
+    ModeSelectComponent,
+    ChronometreComponent
   ],
   imports: [
     BrowserModule,

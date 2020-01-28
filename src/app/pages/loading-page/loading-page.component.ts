@@ -1,3 +1,4 @@
+import { AnimationService } from './../../shared/animation.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoadingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private animFunc: AnimationService) { }
 
   ngOnInit() {
+    this.animFunc.disappeared('name', 4);
   }
 }

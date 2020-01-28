@@ -1,5 +1,6 @@
 <section id="body">
-    <div *ngFor="let mode of modes" class="mode">
-        {{mode}}
+    <div *ngFor="let mode of modes" class="mode" [style.background-color]="mode.background"
+    [routerLink]="mode.link">
+        <p>{{mode.name}}</p>
     </div>
 </section>
